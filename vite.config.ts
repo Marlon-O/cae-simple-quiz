@@ -7,5 +7,15 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss()
-  ]
+  ],
+  server: {
+    port: 3000,
+    proxy: {
+      '/api/quiz': {
+        target: 'https://s3.eu-west-2.amazonaws.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/quiz/, '/interview.mock.data/payload.json'),
+      },
+    },
+  }
 })
