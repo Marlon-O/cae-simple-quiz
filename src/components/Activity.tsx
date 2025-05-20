@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 import type { Activity as ActivityProp, Question, Round } from "../types/Quiz";
 import { QuestionCard } from "./QuestionCard";
 import { RoundCard } from "./RoundCard";
