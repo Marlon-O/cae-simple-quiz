@@ -56,7 +56,7 @@ export const QuestionCard = ({
   };
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 w-full max-w-xl text-center animate-slide-in-right">
+    <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 w-full text-center animate-slide-in-right">
       <h2 className="text-blue-600 text-sm mb-8">
         {activity_name} {round_title ? `/ ${round_title}` : ""} /{" "}
         <strong>Q{question_number}</strong>

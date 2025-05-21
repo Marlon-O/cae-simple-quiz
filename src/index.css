@@ -54,6 +54,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   color: var(--color-text-dark);
   display: grid;
+  justify-content: center;
   place-items: center;
   height: 100vh;
 }
